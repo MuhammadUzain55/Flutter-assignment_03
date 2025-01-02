@@ -6,7 +6,11 @@ void main() {
 // Output: Sum of digits: 15
 
   int numbers = 12345;
-  while (numbers ) {
-    
+  int sum = 0;
+  while (numbers > 0) {
+    int digit = numbers % 10; // Get the last digit
+    sum = sum + digit; // Add the last digit to the sum
+    numbers ~/= 10; // Remove the last digit
   }
+  print("Sum of digits: $sum");
 }
